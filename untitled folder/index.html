@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel Shim-About me page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Daniel Shim - About me page</a>
+            </div>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+
+<section class="About me page">
+    <div class="Hero-clipped">
+        <div class="hero-textbox">
+            <h1 class="main-heading">About Daniel Shim</h1>
+            <h2 class="subheading">Learn about me!</h2>
+            <a href="About.html" class="cta-btn">Learn more</a>
+        </div>
+    </div>
+</section>
+<script>
+    const mainNav = document.querySelector('.main-nav');
+    const navlist = document.querySelector('.nav-list');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+    hamburgerMenu.addEventListener('click', function (){
+        mainNav.classList.toggle('open');
+    });
+</script>
+</body>
+</html>
